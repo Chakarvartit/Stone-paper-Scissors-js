@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bolleans</title>
+</head>
+
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <button onclick="
+    var randomNumber=Math.random();
+
+    let computerMove='';
+
+    if(randomNumber>=0 && randomNumber<1/3)
+    {
+         computerMove='rock';
+    }
+    else if(randomNumber>=1/3 && randomNumber<2/3)
+    {
+        computerMove='paper';
+    }
+    else if(randomNumber>=2/3 && randomNumber<1 )
+    {
+        computerMove='sissors';
+    }
+
+    
+
+let result='';
+
+if(computerMove === 'rock')
+{
+    result = 'Tie.';
+}
+else if(computerMove === 'paper')
+{
+    result = 'lose.';
+}
+else if(computerMove === 'sissors')
+{
+    result = 'You win.';
+}
+alert('You Picked rock . Computer picked'  + ' '+computerMove + ' '+ result );
+
+
+    ">Rock</button>
+
+    <button onclick="
+    var randomNumber1=Math.random();
+    let computerMove1='';
+
+    if(randomNumber1>=0 && randomNumber1<1/3)
+    {
+         computerMove1='rock';
+    }
+    else if(randomNumber1>=1/3 && randomNumber1<2/3)
+    {
+        computerMove1='paper';
+    }
+    else if(randomNumber1>=2/3 && randomNumber1<1 )
+    {
+        computerMove1='sissors';
+    }
+
+
+    let result1='';
+
+    if(computerMove1==='paper')
+    {
+        result1='Tie.';
+    }
+
+    else if(computerMove1 === 'rock')
+    {
+        result1 = 'You win.';
+    }
+    else if(computerMove1 ==='sissors')
+    {
+        result1='lose.';
+    }
+    alert('You Picked paper . Computer picked'  + ' '+computerMove1 + ' '+ result1 );
+
+    ">Paper</button>
+
+
+    <button onclick="
+        var randomNumber2=Math.random();
+
+    let computerMove2='';
+
+    if(randomNumber2>=0 && randomNumber2<1/3)
+    {
+         computerMove2='rock';
+    }
+    else if(randomNumber2>=1/3 && randomNumber2<2/3)
+    {
+        computerMove2='paper';
+    }
+    else if(randomNumber2>=2/3 && randomNumber2<1 )
+    {
+        computerMove2='sissors';
+    }
+
+
+    let result2='';
+
+    if(computerMove2==='paper')
+    {
+        result2='You win.';
+    }
+
+    else if(computerMove2 === 'rock')
+    {
+        result2 = 'lose.';
+    }
+    else if(computerMove2 ==='sissors')
+    {
+        result2='Tie.';
+    }
+    alert('You Picked sissors . Computer picked'  + ' '+computerMove2 + ' '+ result2 );
+
+    ">Scissors</button>
+</body>
+
+</html>
